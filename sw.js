@@ -43,3 +43,18 @@ self.addEventListener('install', (e) => {
   );
 
 });
+
+// How to get things from the cache
+self.addEventListener('fetch', (e) => {
+  e.respondWith(
+    caches.match(e.request)
+    .then((response) => {
+      console.log(response);
+      return response;
+    })
+    .then((response) => {
+      return response || fetch(e.request);
+    })
+  );
+
+});
