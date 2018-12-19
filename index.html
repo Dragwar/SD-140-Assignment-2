@@ -1,32 +1,3 @@
-<!-- 
-
-    Go To Line 30 for HTML
-
-        Requirements:
-    The page at minimum includes all of the following:
-
-d    at least 4 images
-
-d    title text (h1, h2, etc.)
-
-d    regular (paragraph) text
-
-d    a logo.
-
-d    Page utilizes a grid-based layout with styles making use of the flexbox
-
-d    All content is responsive and displays on all display sizes. This includes: Desktop, Mobile, Tablet
-
-d    The assignment completely separates structure (HTML) from design/style (CSS).
-
-d    There are no style attributes present in the body of the HTML document.
-
-d    There are no <style> elements in the document.
-    
-d    Your project looks similar to the provided mock-up, with your own personal customization's.
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +7,7 @@ d    Your project looks similar to the provided mock-up, with your own personal 
     <link rel="stylesheet" href="stylesheet/style.css">
     <!--Link For 2 Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway" rel="stylesheet">
+    <script src="./js/index.js" defer></script>
     <title>Portfolio</title>
 </head>
 
@@ -50,11 +22,11 @@ d    Your project looks similar to the provided mock-up, with your own personal 
             </div>
             <!--Icons Top Left-->
             <div class="move-string">
-                <img class="move-arrow" src="https://mspkvp.github.io/tk7movespretty/assets/arrow/f.svg" alt="left arrow">
-                <img class="move-arrow" src="https://mspkvp.github.io/tk7movespretty/assets/arrow/n.svg" alt="star">
-                <img class="move-arrow" src="https://mspkvp.github.io/tk7movespretty/assets/arrow/d.svg" alt="Diagonal bottom right arrow">
-                <img class="move-arrow" src="https://mspkvp.github.io/tk7movespretty/assets/arrow/df.svg" alt="right arrow">
-                <img class="move-button" src="https://mspkvp.github.io/tk7movespretty/assets/button/PS4/2.svg" alt="Playstaion 4 input triangle">
+                <img class="move-arrow" src="./images/input-icons/f.svg" alt="arrow pointing right">
+                <img class="move-arrow" src="./images/input-icons/n.svg" alt="star">
+                <img class="move-arrow" src="./images/input-icons/d.svg" alt="arrow pointing down">
+                <img class="move-arrow" src="./images/input-icons/df.svg" alt="arrow pointing diagonal bottom right">
+                <img class="move-button" src="./images/input-icons/2.svg" alt="Playstaion 4 input triangle">
             </div>
         </header>
 
@@ -100,6 +72,7 @@ d    Your project looks similar to the provided mock-up, with your own personal 
 
         <footer>
             <div>
+                <!-- Holds all icon links to various sites/things -->
                 <div class="icon-link">
                     <a href="https://github.com/Dragwar" target="_blank" class="git-hub-link">
                         <svg class="octicon-icon" viewBox="0 0 16 16" width="45" height="45" aria-hidden="true">
@@ -118,6 +91,8 @@ d    Your project looks similar to the provided mock-up, with your own personal 
                 </div>
                 <div class="icon-link"></div>
                 <div class="icon-link"></div>
+                <!-- Test-External-Link -->
+                <div class="icon-link"><img src="https://placekitten.com/200/300" alt="kitten"></div>
             </div>
         </footer>
     </div>
