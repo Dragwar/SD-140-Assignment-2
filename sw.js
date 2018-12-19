@@ -44,6 +44,27 @@ self.addEventListener('install', (e) => {
 
 });
 
+// When the new sw gets activated this runs
+// How to delete old caches
+self.addEventListener('activate', (e) => {
+  e.waitUntil(
+    caches.keys().then((cacheNames) => {
+      console.log(cacheNames);
+      return Promise.all(
+        cacheNames.filter((cacheName) => {
+          return cacheName.startsWith('my-') && cacheName !== staticCache;
+        })
+        .map((cacheName) => {
+          return caches.delete(cacheName);
+        })
+      )
+    })
+    .catch((err) => console.warn('delete cache ERROR:', err))
+  );
+
+});
+
+// When fetches are made then this will run
 // How to get things from the cache
 self.addEventListener('fetch', (e) => {
   e.respondWith(
