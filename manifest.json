@@ -39,9 +39,9 @@
      "density": "4.0"
     }
    ],
-  "start_url": "/SD-140-Final-Assignment/index.html",
+  "start_url": ".",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/SD-140-Final-Assignment",
+  "scope": "/SD-140-Final-Assignment/",
   "theme_color": "#3367D6"
 }
