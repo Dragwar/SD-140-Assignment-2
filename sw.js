@@ -21,18 +21,8 @@ self.addEventListener('install', (e) => {
     caches.open(staticCache).then((cache) => {
       return cache.addAll(// .addAll() takes an arr of items that we want to cache
         [
-          'https://dragwar.github.io/SD-140-Assignment-2/images/input-icons/f.svg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/input-icons/n.svg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/input-icons/d.svg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/input-icons/df.sv',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/input-icons/2.svg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/hero.jpg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/HTML-image.jpg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/PC-case.jpg',
-          'https://dragwar.github.io/SD-140-Assignment-2/images/video-games.jpg',
-          'https://dragwar.github.io/SD-140-Assignment-2/stylesheet/style.css',
-          'https://dragwar.github.io/SD-140-Assignment-2/js/index.js',
-          'https://dragwar.github.io/SD-140-Assignment-2/index.html',
+          '/',
+          '/index.html',
           './images/input-icons/f.svg',
           './images/input-icons/n.svg',
           './images/input-icons/d.svg',
@@ -44,8 +34,6 @@ self.addEventListener('install', (e) => {
           './images/video-games.jpg',
           './stylesheet/style.css',
           './js/index.js',
-          '/index.html',
-          '/'
         ]
       );
     })
