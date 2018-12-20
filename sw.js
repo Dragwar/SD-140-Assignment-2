@@ -20,26 +20,26 @@ self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(staticCache).then((cache) => cache.addAll(// .addAll() takes an arr of items that we want to cache
       [
-        './images/input-icons/f.svg',
-        './images/input-icons/n.svg',
-        './images/input-icons/d.svg',
-        './images/input-icons/df.svg',
-        './images/input-icons/2.svg',
+        '../images/input-icons/f.svg',
+        '../images/input-icons/n.svg',
+        '../images/input-icons/d.svg',
+        '../images/input-icons/df.svg',
+        '../images/input-icons/2.svg',
 
-        './images/hero.jpg',
-        './images/HTML-image.jpg',
-        './images/PC-case.jpg',
-        './images/video-games.jpg',
+        '../images/hero.jpg',
+        '../images/HTML-image.jpg',
+        '../images/PC-case.jpg',
+        '../images/video-games.jpg',
 
-        './stylesheet/style.css',
-        './js/index.js',
+        '../stylesheet/style.css',
+        '../js/index.js',
 
 /**** '/index.html' and '/' both point to the index.html file ****/
         '/index.html',  // Should include both - '/index.html' = index.html file
         '/'             // Should include both - '/' = index.html file
       ]
     ))
-    .catch((err) => console.log('make cache ERROR:', err))
+    .catch((err) => console.warn('make cache ERROR:', err))
   );
 
 });
@@ -57,7 +57,7 @@ self.addEventListener('activate', (e) => {
         .map((cacheName) => {
           return caches.delete(cacheName);
         })
-      )
+      );
     })
     .catch((err) => console.warn('delete cache ERROR:', err))
   );
@@ -76,6 +76,7 @@ self.addEventListener('fetch', (e) => {
     .then((response) => {
       return response || fetch(e.request);
     })
+    .catch((err) => console.warn('retrieve from cache ERROR:', err))
   );
 
 });
