@@ -21,19 +21,19 @@ self.addEventListener('install', (e) => {
     caches.open(staticCache).then((cache) => {
       return cache.addAll(// .addAll() takes an arr of items that we want to cache
         [
-          '/SD-140-Assignment-2/',
-          '/SD-140-Assignment-2/index.html',
-          '/SD-140-Assignment-2/images/input-icons/f.svg',
-          '/SD-140-Assignment-2/images/input-icons/n.svg',
-          '/SD-140-Assignment-2/images/input-icons/d.svg',
-          '/SD-140-Assignment-2/images/input-icons/df.svg',
-          '/SD-140-Assignment-2/images/input-icons/2.svg',
-          '/SD-140-Assignment-2/images/hero.jpg',
-          '/SD-140-Assignment-2/images/HTML-image.jpg',
-          '/SD-140-Assignment-2/images/PC-case.jpg',
-          '/SD-140-Assignment-2/images/video-games.jpg',
-          '/SD-140-Assignment-2/stylesheet/style.css',
-          '/SD-140-Assignment-2/js/index.js',
+          './',
+          './index.html',
+          './images/input-icons/f.svg',
+          './images/input-icons/n.svg',
+          './images/input-icons/d.svg',
+          './images/input-icons/df.svg',
+          './images/input-icons/2.svg',
+          './images/hero.jpg',
+          './images/HTML-image.jpg',
+          './images/PC-case.jpg',
+          './images/video-games.jpg',
+          './stylesheet/style.css',
+          './js/index.js',
         ]
       );
     })
