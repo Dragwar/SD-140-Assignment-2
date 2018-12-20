@@ -42,6 +42,6 @@
   "start_url": "/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "./",
+  "scope": "/SD-140-Final-Assignment",
   "theme_color": "#3367D6"
 }
