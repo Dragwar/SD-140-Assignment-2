@@ -35,29 +35,26 @@ self.addEventListener('install', (e) => {
           './stylesheet/style.css',
           './js/index.js',
           './manifest.json',
-
-          './icons/favicon.ico',
-          "./icon/favicon-32x32.png",
-          "./icon/favicon-96x96.png",
-          "./icon/favicon-16x16.png",
-
-          './icons/android-icon-192x192.png',
-          './icons/android-icon-144x144.png',
-          './icons/android-icon-96x96.png',
-          './icons/android-icon-72x72.png',
-          './icons/android-icon-48x48.png',
-          './icons/android-icon-36x36.png',
-
-          "./icon/apple-icon-180x180.png",
-          "./icon/apple-icon-152x152.png",
-          "./icon/apple-icon-144x144.png",
-          "./icon/apple-icon-120x120.png",
-          "./icon/apple-icon-114x114.png",
-          "./icon/apple-icon-76x76.png",
-          "./icon/apple-icon-72x72.png",
-          "./icon/apple-icon-60x60.png",
-          "./icon/apple-icon-57x57.png",
-          "./icon/ms-icon-144x144.png"
+          './icon/favicon.ico',
+          './icon/favicon-32x32.png',
+          './icon/favicon-96x96.png',
+          './icon/favicon-16x16.png',
+          './icon/android-icon-192x192.png',
+          './icon/android-icon-144x144.png',
+          './icon/android-icon-96x96.png',
+          './icon/android-icon-72x72.png',
+          './icon/android-icon-48x48.png',
+          './icon/android-icon-36x36.png',
+          './icon/apple-icon-180x180.png',
+          './icon/apple-icon-152x152.png',
+          './icon/apple-icon-144x144.png',
+          './icon/apple-icon-120x120.png',
+          './icon/apple-icon-114x114.png',
+          './icon/apple-icon-76x76.png',
+          './icon/apple-icon-72x72.png',
+          './icon/apple-icon-60x60.png',
+          './icon/apple-icon-57x57.png',
+          './icon/ms-icon-144x144.png'
         ]
       );
     })
@@ -65,6 +62,47 @@ self.addEventListener('install', (e) => {
   );
 
 });
+/* OLD CACHE */
+/*
+  './',
+  './index.html',
+  './images/input-icons/f.svg',
+  './images/input-icons/n.svg',
+  './images/input-icons/d.svg',
+  './images/input-icons/df.svg',
+  './images/input-icons/2.svg',
+  './images/hero.jpg',
+  './images/HTML-image.jpg',
+  './images/PC-case.jpg',
+  './images/video-games.jpg',
+  './stylesheet/style.css',
+  './js/index.js',
+  './manifest.json',
+
+  './icon/favicon.ico',
+  './icon/favicon-32x32.png',
+  './icon/favicon-96x96.png',
+  './icon/favicon-16x16.png',
+
+  './icon/android-icon-192x192.png',
+  './icon/android-icon-144x144.png',
+  './icon/android-icon-96x96.png',
+  './icon/android-icon-72x72.png',
+  './icon/android-icon-48x48.png',
+  './icon/android-icon-36x36.png',
+
+  './icon/apple-icon-180x180.png',
+  './icon/apple-icon-152x152.png',
+  './icon/apple-icon-144x144.png',
+  './icon/apple-icon-120x120.png',
+  './icon/apple-icon-114x114.png',
+  './icon/apple-icon-76x76.png',
+  './icon/apple-icon-72x72.png',
+  './icon/apple-icon-60x60.png',
+  './icon/apple-icon-57x57.png',
+  './icon/ms-icon-144x144.png'
+*/
+
 
 // When the new sw gets activated this runs
 // How to delete old caches
