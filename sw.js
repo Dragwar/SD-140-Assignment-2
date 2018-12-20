@@ -15,7 +15,7 @@
 
 // When sw gets installed then this will run
 // How to add things into a cache
-const staticCache = 'my-cache-1';// IMPORTANT: increment the num when you change something in the cache
+const staticCache = 'my-cache-v1';// IMPORTANT: increment the num when you change something in the cache
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(staticCache).then((cache) => {
@@ -34,6 +34,30 @@ self.addEventListener('install', (e) => {
           './images/video-games.jpg',
           './stylesheet/style.css',
           './js/index.js',
+          './manifest.json',
+
+          './icons/favicon.ico',
+          "./icon/favicon-32x32.png",
+          "./icon/favicon-96x96.png",
+          "./icon/favicon-16x16.png",
+
+          './icons/android-icon-192x192.png',
+          './icons/android-icon-144x144.png',
+          './icons/android-icon-96x96.png',
+          './icons/android-icon-72x72.png',
+          './icons/android-icon-48x48.png',
+          './icons/android-icon-36x36.png',
+
+          "./icon/apple-icon-180x180.png",
+          "./icon/apple-icon-152x152.png",
+          "./icon/apple-icon-144x144.png",
+          "./icon/apple-icon-120x120.png",
+          "./icon/apple-icon-114x114.png",
+          "./icon/apple-icon-76x76.png",
+          "./icon/apple-icon-72x72.png",
+          "./icon/apple-icon-60x60.png",
+          "./icon/apple-icon-57x57.png",
+          "./icon/ms-icon-144x144.png"
         ]
       );
     })
